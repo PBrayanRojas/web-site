@@ -1,0 +1,23 @@
+.background-content {
+	background-image: url("wallpaper.gif");
+	background-color: #cccccc; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: ; /* Resize the background image to cover the entire container */
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+}
+.background-content p {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.background-content h1 {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.content-whited {
+    text-align: center;
+    padding: 60px 60px 80px 60px;
+    font-family: 'Merriweather', serif;
+
+}
