@@ -17,8 +17,8 @@
 </head>
 <body>
 	<script>
-	// alert("Esta Pagina es oficial, mi pagina no tiene membresia, si te pide dinero y te dirige a una pagina gratis, ve y reclama tu dinero, es una estafa. Hay Paginas finguendo de mi.")
-	// alert("Estamos en directo! | Live Now! LiveStream")
+	alert("Esta Pagina es oficial, mi pagina no tiene membresia, si te pide dinero y te dirige a una pagina gratis, ve y reclama tu dinero, es una estafa. Hay Paginas finguendo de mi.")
+	alert("Estamos en directo! | Live Now! LiveStream")
 	</script>
 	<!-- IMAGE BACKGROUND -->
 		<div class="background-content">
@@ -50,7 +50,8 @@
 		<br><br><br><center><iframe id="kaltura_player_1558832193" src="https://cdnapisec.kaltura.com/p/2565192/sp/256519200/embedIframeJs/uiconf_id/44197302/partner_id/2565192?iframeembed=true&playerId=kaltura_player_1558832193&entry_id=0_tf8129kt" width="600" height="450" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0"></iframe></center>
 		<br><br><br>
 		<section class="reproductorpc">
-		<iframe allowfullscreen="" width="610" height="350" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="http://premiumtvchannels.com/latino/directv" __idm_id__="432434177"></iframe>
+		
+	</script><iframe allowfullscreen="" width="610" height="350" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="http://premiumtvchannels.com/latino/directv" __idm_id__="432434177"></iframe>
 
 	</section> -->
 
@@ -58,7 +59,30 @@
 		<h1>Livestream!</h1>
 		<h3>( Transmision! )</h3>
 		<br><br><br>
-		<iframe src="https://iframe.dacast.com/b/132850/c/503184" width="590" height="431" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!--
+      Create a Twitch.Embed object that will render
+      within the "twitch-embed" root element.
+    -->
+    <script type="text/javascript">
+      var embed = new Twitch.Embed("twitch-embed", {
+        width: 640,
+        height: 380,
+        channel: "brtv_",
+        layout: "video",
+        autoplay: true
+      });
+
+      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+      });
+    </script>
 	</center>
 </body>
 </html>
