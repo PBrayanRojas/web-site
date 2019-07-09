@@ -17,7 +17,7 @@
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
 @media (min-width: @screen-lg-min) { ... }
 .background-content {
-	background-image: url("wallpoaper.gif");
+	background-image: url("https://www.google.com/search?q=ricardo+milos+jpg&tbm=isch&source=iu&ictx=1&fir=8tNr51RfDz3DVM%253A%252CQ2v0BXlqh5FIlM%252C_&vet=1&usg=AI4_-kQxX_9gLPqJkR7sqWtX4jk_5R86SA&sa=X&ved=2ahUKEwiVhdW11abjAhWBmlkKHXP_C5QQ9QEwBHoECAgQDA#imgrc=8tNr51RfDz3DVM:");
 	background-color: #cccccc; /* Used if the image is unavailable */
     height: 300px; /* You must set a specified height */
     background-position: center; /* Center the image */
